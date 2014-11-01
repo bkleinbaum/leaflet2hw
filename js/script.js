@@ -54,7 +54,12 @@ L.tileLayer('http://{s}.tiles.mapbox.com/v3/examples.map-i875mjb7/{z}/{x}/{y}.pn
     maxZoom: 18
 }).addTo(map);
 
-L.control.layers(overlays).addTo(map);
+layerControl = L.control.layers(null, overlays, {
+	position: 'bottomright',
+	collapsed: false
+});
+
+layerControl.addTo(map);
 
 var info = L.control();
 
