@@ -65,7 +65,7 @@ info.onAdd = function (map) {
 };
 
 info.update = function (props) {
-    this._div.innerHTML = '<h4>"Best Pizza and Bars in NYC"</h4>'
+    this._div.innerHTML = '<h4>Best Pizza and Bars in NYC</h4>'
 
 };
 
